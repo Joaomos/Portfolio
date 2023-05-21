@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu">
+
+        <div class="menu-content main-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><img src="assets/img/profile-pic.png" class="menu-pic" alt="foto redonda de um homem com o fundo liso">
+            </h1>
+
+
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;" class="menu-middle">
+                    <li><a href="#intro">intro</a></li>
+                    <div class="spacing-in-menu"></div>
+                    <li><a href="#sobre-mim">sobre mim</a></li>
+                    <div class="spacing-in-menu"></div>
+                    <li><a href="#my-projects">meus projetos</a></li>
+                </ul>
+            </nav>
+
+
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/joaomarcosgtr/" target="_blank"><img
+                                src="assets/img/instagram (2).svg" class="icons" id="insta-icon"
+                                alt="logo do aplivativo instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ojoaomarcosilva/" target="_blank"><img
+                                src="assets/img/linkedin.svg" class="icons" id="link-icon"
+                                alt="logo do aplicativo LinkedIn"></a>
+                    </li>
+                    <li><a href="https://github.com/Joaomos" target="_blank"><img src="assets/img/github (1).svg"
+                                class="icons" id="git-icon" alt="logo do site github"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section class="blue-bg" id="intro">
+        <div class="intro-content main-content section">
+
+            <div class="intro-text">
+                <h2>Olá, sou o João Marcos Silva, aqui estão alguns dos meus projetos:</h2>
+            </div>
+
+            <div class="works-space">
+                <div class="works-square"><a href="https://landingpage-by-joaomarcos.netlify.app/" target="_blank"><img
+                            src="assets/img/landing-page.PNG" alt="imagem de um site"></a>
+                    <p>Lading Page</p>
+                </div>
+                <div class="works-square" id="intro-final"><a href="https://loginpage-by-joaomarcos.netlify.app/" target="_blank"><img
+                            src="assets/img/login-page.PNG"
+                            alt="imagem de um site com um astrounata e uma pagina de login"></a>
+                    <p>Login Page</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section white-bg" id="sobre-mim">
+        <div class="main-content about-me-section">
+
+            <div>
+                <img
+                src="assets/img/profile-pic.png" class="about-me-pic-mobile"
+                alt="foto redonda de um homem com o fundo liso">
+            </div>
+
+            <h2>Prazer,</h2>
+
+            <div class="about-me-content">
+            
+                <p>Como eu disse, sou João Marcos e sou um estudante do primeiro período de Gestão da Informação na UFU
+                    (Universidade Federal de Uberlândia). Possuo curso de Inglês avançado com certificado oferecido pela
+                    Cultura Inglesa e pela Universidade de Cambridge.
+                </p>
+                <div class="about-me-img">
+                    <p>Atualmente, dedico meu tempo livre para o estudo de linguagens de programação como HTML, CSS e
+                        JavaScript. Estou aprimorando meu conhecimento em JavaScript para então me aprofundar nos
+                        estudos de
+                        linguagens como React, TypeScript, NextJS, SQL e Python.</p><img
+                        src="assets/img/profile-pic.png" class="about-me-pic"
+                        alt="foto redonda de um homem com o fundo liso">
+                </div>
+                <p>Tenho muito interesse em começar minha carreira na área da programação e me tornar um desenvolvedor
+                    de sucesso, pois é uma área que eu sempre gostei muito e sempre me identifiquei.</p>
+                <p class="about-me-last-paragraph">Espero adquirir o máximo de conhecimento que eu puder para conseguir
+                    contribuir em diferentes áreas e
+                    ajudar no crescimento e desenvolvimento da empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-bg section" id="my-projects">
+
+        <div class="main-content">
+            <div class="
+            my-projects-text">
+                <h2>Aqui estão mais alguns projetos desenvolvidos por mim:</h2>
+            </div>
+
+            <div class="my-projects works-space main-content">
+
+                <div class="my-projects-squares">
+                    <div class="works-square-final"><a href="https://landingpage-by-joaomarcos.netlify.app/"
+                            target="_blank"><img src="assets/img/landing-page.PNG" alt="imagem de um site"></a>
+                        <p>Lading Page</p>
+                    </div>
+
+                    <div class="works-square-final"><a href="https://loginpage-by-joaomarcos.netlify.app/"
+                            target="_blank"><img src="assets/img/login-page.PNG"
+                                alt="imagem de um site com um astrounata e uma pagina de login"></a>
+                        <p>Login Page</p>
+                    </div>
+
+
+                    <!--<div class="works-square-final"><a href="#" target="_blank"><img src="#" alt="#"></a>
+                        <p>next project</p>
+                    </div>
+                </div>
+
+                <div class="my-projects-squares">
+                    <div class="works-square-final"><a href="#" target="_blank"><img src="#" alt="#"></a>
+                        <p>next project</p>
+                    </div>
+
+                    <div class="works-square-final"><a href="#" target="_blank"><img src="#" alt="#"></a>
+                        <p>next project</p>
+                    </div>
+
+
+                    <div class="works-square-final"><a href="#" target="_blank"><img src="#" alt="#"></a>
+                        <p>next project</p>
+                    </div>
+                </div>-->
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <h2>Feito com </h2>
+        <h2 id="heart">❤</h2>
+        <h2>por João Marcos.</h2>
+    </footer>
+
+
+</body>
+
+</html>

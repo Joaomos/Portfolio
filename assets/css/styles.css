@@ -142,6 +142,10 @@ font-family: 'Roboto', sans-serif;*/
     padding: 0.2rem;
 }
 
+.close-menu {
+    display: none;
+}
+
 .intro-content {
     display: flex;
     justify-content: center;
@@ -299,10 +303,6 @@ font-family: 'Roboto', sans-serif;*/
     cursor: pointer;
 }
 
-.close-menu {
-    display: none;
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -383,6 +383,10 @@ font-family: 'Roboto', sans-serif;*/
 }
 
 @media (max-width: 800px) {
+    h2 {
+        font-size: 3rem !important;
+    }
+
     .menu {
         bottom: 0;
         text-align: center;
@@ -429,10 +433,6 @@ font-family: 'Roboto', sans-serif;*/
         content: '×';
     }
 
-    h2 {
-        font-size: 3rem !important;
-    }
-
     .menu {
         position: fixed;
         background: var(--white-color);
@@ -445,52 +445,52 @@ font-family: 'Roboto', sans-serif;*/
         border: 0.01rem solid var(--light-gray-color);
         box-shadow: 0px 0px 20px #00000056;
     }
-    
+
     .menu-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .menu h1 {
         width: 10rem;
         height: 10rem;
         margin: 0 0 0 0;
     }
-    
+
     .menu-pic {
         width: 10rem;
         height: 10rem;
         padding: 0.5rem;
     }
-    
+
     .menu ul {
         display: flex;
         list-style: none;
     }
-    
+
     .menu-middle {
         font-size: 2rem;
         margin: 3rem;
     }
-    
+
     .menu-middle li {
         margin: 1rem 0;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     .menu-middle a {
         text-decoration: none;
         color: var(--black-color);
     }
-    
+
     .menu-middle a:hover {
         background: var(--secondary-color);
         padding: 0.8rem;
         border-radius: 2rem;
         font-size: 1.8rem;
     }
-    
+
     .spacing-in-menu {
         background-color: var(--light-gray-color);
         height: 0;
@@ -499,6 +499,12 @@ font-family: 'Roboto', sans-serif;*/
         border: 0 solid #aaaaaa;
     }
 
+    .icons-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+
     .icons {
         margin: 1rem;
     }
@@ -506,23 +512,27 @@ font-family: 'Roboto', sans-serif;*/
     #insta-icon {
         margin: 0;
     }
-    
+
     #git-icon {
         margin: 0rem 0rem 0rem 0rem;
     }
-    
+
+    #link-icon {
+        margin: 0 1rem;
+    }
+
     #insta-icon:hover {
         background: var(--secondary-color);
         border-radius: 1rem;
         padding: 0.2rem;
     }
-    
+
     #link-icon:hover {
         background: var(--secondary-color);
         border-radius: 0.5rem;
         padding: 0.2rem;
     }
-    
+
     #git-icon:hover {
         background: var(--secondary-color);
         border-radius: 2rem;
@@ -531,13 +541,6 @@ font-family: 'Roboto', sans-serif;*/
 
     .intro-content {
         flex-direction: column;
-    }
-
-    .works-space {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: inherit;
     }
 
     #intro-final {
@@ -555,7 +558,11 @@ font-family: 'Roboto', sans-serif;*/
     }
 
     .works-space {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
     }
 
     .works-square {
@@ -599,12 +606,12 @@ font-family: 'Roboto', sans-serif;*/
         justify-content: center;
         align-items: center;
     }
-    
+
     .about-me-section h2 {
         font-size: 4rem;
         margin: 5rem 0 2rem;
     }
-    
+
     .about-me-content {
         max-width: 64rem;
         display: flex;
@@ -632,14 +639,13 @@ font-family: 'Roboto', sans-serif;*/
         align-items: center;
         background: var(--tertiary-color);
     }
-    
+
     .footer h2 {
         font-size: 1.5rem !important;
     }
-    
+
     #heart {
         color: red;
         padding: 0.7rem;
     }
 }
-

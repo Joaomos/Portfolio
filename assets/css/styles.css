@@ -219,6 +219,7 @@ font-family: 'Roboto', sans-serif;*/
 
 .my-projects-squares {
     display: flex;
+    justify-content: center;
     flex-direction: nowrap;
 }
 

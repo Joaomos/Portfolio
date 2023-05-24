@@ -19,12 +19,17 @@ h2 {
     font-family: 'Noto Sans', sans-serif;
 }
 
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 p {
     font-family: 'Noto Sans', sans-serif;
 }
 
 /*font-family: 'Noto Sans', sans-serif;
-font-family: 'Roboto', sans-serif;*/
+font-family: 'Roboto', sans-serif;
+font-family: 'Noto Serif', serif;*/
 
 .main-content {
     max-width: 120rem;
@@ -152,23 +157,59 @@ font-family: 'Roboto', sans-serif;*/
     align-items: center;
 }
 
+.intro-first-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .intro-text {
     padding: 3rem;
 }
 
-.intro-text h2 {
-    font-size: 3rem;
+.intro-text h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0.5rem;
+    color: var(--black-color);
+    background: var(--light-gray-color);
+    border: 2px solid var(--black-color);
+    border-radius: 4rem;
+    width: 26rem;
+    padding: 1rem;
 }
 
-.intro-img {
+.intro-text h3 {
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+    font-size: 7.6rem;
+}
+
+.intro-text p {
+    font-size: 2.4rem;
+    text-align: left;
+    margin: 2rem 0 0 1rem;
+}
+
+.intro-text p a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.intro-text p a:hover {
+    background: var(--light-gray-color);
+    padding: 0.2rem;
+    border-radius: 4rem;
+}
+
+.intro-h3-img {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
 
-.intro-img img {
-    width: 80%;
-    height: 80%;
+.intro-h3-img img {
+    width: 20%;
 }
 
 .about-me-section {
@@ -298,10 +339,13 @@ font-family: 'Roboto', sans-serif;*/
         justify-content: center;
         align-items: center;
     }
+
+    .intro-first-content h3 {
+        font-size: 500%;
+    }
     
-    .intro-img img {
-        width: 65%;
-        height: 65%;
+    .intro-h3-img img {
+        width: 25%;
     }
 
     .works-space {
@@ -362,10 +406,6 @@ font-family: 'Roboto', sans-serif;*/
 }
 
 @media (max-width: 800px) {
-    h2 {
-        font-size: 3rem !important;
-    }
-
     .menu {
         bottom: 0;
         text-align: center;
@@ -392,7 +432,6 @@ font-family: 'Roboto', sans-serif;*/
         top: 2rem;
         right: 2rem;
         background: var(--light-gray-color);
-        border: 2px solid var(--light-gray-color);
         border-radius: 2rem;
         color: var(--white-color);
         font-size: 3rem;
@@ -522,6 +561,29 @@ font-family: 'Roboto', sans-serif;*/
         flex-direction: column;
     }
 
+    .intro-text h4 {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 0.5rem;
+        color: var(--black-color);
+        background: var(--light-gray-color);
+        border: 2px solid var(--black-color);
+        border-radius: 4rem;
+        width: 24rem;
+        padding: 1rem;
+    }
+    
+    .intro-text h3 {
+        text-align: left;
+        font-family: 'Noto Serif', serif;
+        font-size: 7rem;
+    }
+
+    .intro-h3-img img {
+        display: none;
+    }
+
     #intro-final {
         margin-bottom: 7rem;
     }
@@ -529,7 +591,7 @@ font-family: 'Roboto', sans-serif;*/
     .intro-text {
         width: 90%;
         text-align: center;
-        margin-top: 8rem;
+        margin-top: 10rem;
     }
 
     .intro-text h2 {
